@@ -1,0 +1,119 @@
+body {
+    background-color: black;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.backgroundContainer {
+    color: #fff;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#photoCred {
+    font-size: .7rem;
+}
+.formContainer {
+    height: 100%;
+    width: 560px;
+    background: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#form {
+    display: flex;
+    flex:auto;
+    flex-direction: column;
+    color: #fff;
+    background: black;
+    justify-content: center;
+    align-self: center;
+    height: 700px;
+    width: 560px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.intro {
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 250px;
+    padding: 12px;
+    padding-left: 36px;
+}
+
+.signup {
+    display: flex;
+    height: 250px;
+    padding: 12px;
+    padding-left: 36px;
+}
+
+.column1signup {
+    width: 50vw;
+}
+
+.column2signup {
+    width: 50vw;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+li {
+    font-size: .9rem;
+    color: #fff;
+}
+
+input {
+    margin-bottom: 16px;
+    margin-top: 6px;
+    background: black;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.createAccount {
+    height: 100px;
+    padding: 12px;
+    padding-left: 36px;
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup input {
+    color: #fff;
+}
+
+.signup input:valid {
+    color: #fff;
+    border: 1px solid greenyellow;
+}
+
+button {
+    height: 35px;
+    width: 150px;
+    margin-bottom: 16px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 800;
+}
