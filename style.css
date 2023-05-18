@@ -3,15 +3,16 @@
 :root {
     --font: 'Varela Round', sans-serif;
     --font-color: #555;
+    --font-color-letters: #467A96;
     --border-color: #555;
     --bg-color: #c5c3c6;
     --bg-gameboard: white;
     --bg-header: #;
     --bg-button: white;
-    --bg-button-hover: #3b4b57;
-    --bg-button-active: #2a3a46;
-    --height-button: 50px;
-    --width-button: 100px;
+    --bg-button-hover: #DCDCDC;
+    --bg-button-active: #BDBDBD;
+    --height-button: 151px;
+    --width-button: 151px;
 }
 
 
@@ -61,15 +62,55 @@ body {
     grid-template-columns: repeat(3, 1fr);
     width: 454px;
     height: 454px;
-    margin: 0px auto;
-    background-color: var(--bg-gameboard);
-    border-radius: 10px;
+    margin: 0px;
 }
 
 .square {
     border: 1px solid var(--border-color);
-    border-radius: 02px;
+    height: 151.33px;
+    width: 151.33px;
+    font-size: 1px;
+    color: var(--font-color-letters);
+}
 
+.square:nth-child(1) {
+    border-top-left-radius: 15px;
+}
+
+.square:nth-child(3) {
+    border-top-right-radius: 15px;
+}
+
+.square:nth-child(7) {
+    border-bottom-left-radius: 15px;
+}
+
+.square:nth-child(9) {
+    border-bottom-right-radius: 15px;
+}
+
+.square:nth-child(1), 
+.square:nth-child(2), 
+.square:nth-child(3) {
+	border-top: none;
+}
+
+.square:nth-child(1),
+.square:nth-child(4),
+.square:nth-child(7) { 
+    border-left: none; 
+}
+
+.square:nth-child(3),
+.square:nth-child(6),
+.square:nth-child(9) { 
+    border-right: none; 
+}
+
+.square:nth-child(7),
+.square:nth-child(8),
+.square:nth-child(9) { 
+    border-bottom: none; 
 }
 
 .center{
@@ -78,31 +119,41 @@ body {
 }
 
 .restart {
-    background-color: var(--bg-button);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: var(--height-button);
     width: var(--width-button);
-    border-radius: 10px;
+    font-size: 36px;
+    color: var(--font-color);
+    background-color: var(--bg-button);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.hover:hover,
+.restart:hover {
+    background-color: var(--bg-button-hover);
+    cursor: grab;
+}
+
+.active:active,
+.restart:active {
+    background-color: var(--bg-button-active);
+    cursor: grabbing;
 }
 
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
     width: 100%;
     padding: 10px;
     font-size: 20px;
-  }
-  
-.fa-github {
-    color: var(--font-color);
-    font-size: 24px;
-    transition: transform 0.3s ease-in-out;
 }
   
-.fa-github:hover {
-    transform: rotate(360deg) scale(1.2);
+.rotate {
+    transition: transform 1s ease-in-out;
+    transform: rotate(720deg);
 }
