@@ -64,7 +64,6 @@ const displayController = (() => {
     return { setHTMLMessage, stopGame };
 })();
 
-
 // setup game controller
 const gameController = (() => {
     const playerX = Player("X");
