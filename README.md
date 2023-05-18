@@ -1,4 +1,4 @@
-# [PROJECT NAME]
+# Tic-Tac-Toe
 
 https://jason-lava.github.io/tic-tac-toe/
 
