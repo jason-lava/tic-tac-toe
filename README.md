@@ -1,10 +1,11 @@
 # Tic-Tac-Toe
 
+Tic-Tac-Toe -- what a classic game, now on your computer to play against your friends.
+Try it below!
+
 https://jason-lava.github.io/tic-tac-toe/
 
 ![tic-tac-toe](https://github.com/jason-lava/tic-tac-toe/blob/main/Screenshot%20from%202023-05-17%2018-18-11.png)
-
-Tic-Tac-Toe -- what a classic game, now on your computer to play against your friends.
 
 # How It's Made:
 Tech used:
